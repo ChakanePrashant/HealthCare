@@ -3,7 +3,7 @@ import Sidebar from "./components/Sidebar";
 import Header from "./components/Header";
 import CalendarSection from "./components/CalendarSection";
 
-import "./styles/app.css";
+import "./styles/App.css";
 import BodySection from "./components/BodySection";
 import ActivityChart from "./components/ActivityChart";
 import Dashboard from "./components/Dashboard";
