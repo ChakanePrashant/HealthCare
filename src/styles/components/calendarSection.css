@@ -1,0 +1,168 @@
+.calendar-section {
+    background: white;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .calendar-header h3 {
+    margin: 0;
+    font-weight: 600;
+    color: #121331;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #20c997;
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  
+  .nav-btn:hover {
+    background: #eaf2ff;
+  }
+  
+  /* Weekday headers */
+  .calendar-weekdays {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: center;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #6c757d;
+  }
+  
+  /* Only one week row */
+  .calendar-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 8px;
+  }
+  
+  /* Day cell */
+  .calendar-cell {
+    min-height: 60px;
+    background: #f9fbff;
+    border-radius: 6px;
+    padding: 6px;
+    font-size: 0.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    color: #121331;
+  }
+  
+  .today .date-number {
+    background: #20c997;
+    color: white;
+    border-radius: 4px;
+    padding: 2px 6px;
+  }
+  
+  .date-number {
+    font-weight: 600;
+    font-size: 0.9rem;
+    align-self: flex-end;
+  }
+  
+  /* Event icons inside a date */
+  .events-icons {
+    display: flex;
+    gap: 4px;
+    margin-top: auto;
+  }
+  
+  .event-icon {
+    font-size: 1.1rem;
+  }
+  
+  /* Appointments */
+  .appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+  }
+  
+  .appointments h4 {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #121331;
+  }
+  
+  /* Row layout for dentist and physiotherapy */
+  .appointment-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  
+  .appointment-card {
+    background-color: #eef1ff;
+    border-radius: 12px;
+    padding: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    min-width: 220px;
+    flex: 1;
+  }
+  
+  .appointment-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: #121331;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .appointment-time {
+    font-size: 0.85rem;
+    color: #444;
+  }
+  
+  .appointment-doctor {
+    font-size: 0.8rem;
+    color: #6c757d;
+  }
+
+  .appointments {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .appointment-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  
+  /* Optional: handle smaller screens */
+  @media (max-width: 600px) {
+    .appointment-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  

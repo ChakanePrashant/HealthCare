@@ -1,0 +1,40 @@
+/* Reset and base */
+/* Ensure full layout is visible */
+body, html, #root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f8f9ff;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  
+  /* Main grid layout */
+  .app-container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Main content flex layout */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Body holds BodySection and CalendarSection side-by-side */
+  .content-body {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    overflow-y: auto;
+    background: #fff;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+  
+  

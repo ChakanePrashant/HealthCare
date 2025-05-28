@@ -1,0 +1,14 @@
+.activity-chart {
+  background: white;
+  padding: 2px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  max-width: 500px;
+  margin: auto;
+}
+
+.activity-chart h4 {
+  margin-bottom: 16px;
+  color: #121331;
+  font-weight: 600;
+}
