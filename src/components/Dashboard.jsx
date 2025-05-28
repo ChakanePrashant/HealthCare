@@ -1,7 +1,7 @@
 import React from "react";
-import BodySection from "./BodySection"; // ✅ FIXED
-import ActivityChart from "./ActivityChart"; // ✅ FIXED
-import "../styles/components/dashboard.css"; // ✅ Ensure .css extension
+import BodySection from "./BodySection"; 
+import ActivityChart from "./ActivityChart"; 
+import "../styles/components/dashboard.css"; 
 
 
 function Dashboard() {

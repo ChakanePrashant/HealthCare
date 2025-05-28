@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import AppointmentCard from "./AppointmentCard";
 import "../styles/components/calendarSection.css";
 
-// Sample appointments/events data keyed by date strings "YYYY-MM-DD"
+
 const sampleEvents = {
   "2025-05-26": [{ title: "Dentist", time: "09:00-11:00", doctor: "Dr. Cameron Williamson", icon: "🦷" }],
   "2025-05-27": [{ title: "Physiotherapy", time: "11:00-12:00", doctor: "Dr. Kevin Djones", icon: "💪" }],
@@ -67,7 +67,7 @@ function CalendarSection() {
 
   const currentWeekDays = getCurrentWeek();
 
-  // Separate dentist/physiotherapy and other upcoming
+  
   const currentMonthKey = `${year}-${String(month + 1).padStart(2, "0")}`;
   const allAppointments = Object.entries(sampleEvents)
     .filter(([date]) => date.startsWith(currentMonthKey))
